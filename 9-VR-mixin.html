@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/a-frame/aframe-v0.8.2.min.js"></script>
+    <script src="lib/a-frame/aframe-altspace-component.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-mixin id="cube" 
+	    geometry="primitive: box" 
+	    material="color: red" 
+	    rotation="0 45 0"></a-mixin>
+        
+        <a-mixin id="sphere" geometry="primitive: sphere"
+                 material="color: blue"></a-mixin>
+
+ 
+                 </a-assets>
+
+	<a-entity mixin="cube" position="-3.5 1 -4" material="color: blue"></a-entity>
+	<a-entity mixin="cube" position="0 1 -4"></a-entity>
+	<a-entity mixin="cube" position="3.5 1 -4"></a-entity>
+      
+	<a-entity mixin="red cube"></a-entity>
+
+    </a-scene>
+
+ </body>
+</html>
